@@ -1,0 +1,7 @@
+{
+    "sender_email": "youremail@gmail.com",
+    "sender_password": "yourgmailpassword",
+    "recv_email": "wheretosendinfo@xxxx.com",
+    "subject": "message subject",
+    "args": []
+}
