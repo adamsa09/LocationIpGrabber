@@ -26,3 +26,8 @@
 -t   Timezone  
 -a   All Info
 ```
+
+### Then, run `generate.py`.  
+#
+# Last step
+### Now, you would probably want to convert the `generated.py` to a `.exe` so that people wont see your personal email and password, and code the rest of `generated.py` to be an app that anybody would click. (Rock paper scissors game, todolist....) possibilities are obviously endless.
