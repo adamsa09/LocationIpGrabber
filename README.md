@@ -7,7 +7,6 @@
 >## Usage
 `git clone https://github.com/adamsa09/LocationIpGrabber.git`  
 `cd LocationIpGrabber`  
-`python main.py`  
 
 ### Edit `config.json` Set `sender_email` to your gmail,   
 ### set `sender_password` to your gmail password (if you dont feel comfortable look at the source code),  
