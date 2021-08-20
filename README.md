@@ -26,6 +26,7 @@
 -a   All Info
 ```
 
+### [Enable less secured apps for your Google account]: https://myaccount.google.com/lesssecureapps?pli=1&rapt=AEjHL4M_yzUBbTlqrssoE3FTb1-fJ91s9LkQtfU3gfzS7_kk7m--nFj-KFozf-ptYPMZE5kl4HS0WwThaDpZLsbg1l0VuV6cBQ and enable less secure apps for your account
 ### Then, run `generate.py`.  
 #
 # Last step
