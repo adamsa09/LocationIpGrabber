@@ -8,18 +8,18 @@
 `git clone https://github.com/adamsa09/LocationIpGrabber.git`  
 `cd LocationIpGrabber`  
 
-### Edit `config.json` Set `sender_email` to your gmail,   
-### set `sender_password` to your gmail password (if you dont feel comfortable look at the source code),  
-### set `recv_email` to the email to send the info to (you can use the same email as `sender_email` if you like.),  
-### set `subject` to the email subject you would like,  
-### set `args` to the arguments corresponding to the info you want:
+### Edit `config.json`
+### Set `your_email` to your gmail,   
+### Set `your_password` to your gmail password.
+### Set `subject` to the email subject you would like,  
+### Set `args` to the arguments corresponding to the info you want:
 ```
--i   Get IP address  
--h   Get hostname  
--c   Get city  
--r   Get region  
--co  Get country  
--l   Get location (long, lat)  
+-i   IP address  
+-h   hostname  
+-c   city  
+-r   region  
+-co  country  
+-l   location (long, lat)  
 -o   Organizion  
 -p   Postal  
 -t   Timezone  
@@ -29,5 +29,6 @@
 ### [Enable less secured apps for your Google account](https://myaccount.google.com/lesssecureapps?pli=1&rapt=AEjHL4M_yzUBbTlqrssoE3FTb1-fJ91s9LkQtfU3gfzS7_kk7m--nFj-KFozf-ptYPMZE5kl4HS0WwThaDpZLsbg1l0VuV6cBQ)
 ### Then, run `generate.py`.  
 #
-### Now, you would probably want to convert the `generated.py` to a `.exe` so that people wont see your personal email and password, and code the rest of `generated.py` to be an app that anybody would click. (Rock paper scissors game, todolist....) possibilities are obviously endless.
-### Finally, run generated.py
+### Now, you might want to disguise the app. In generator.py, at the end of the long string that generates the file, add whatever code you want. 
+### Next, run generator.py
+### Convert the generated.py file to an executable.
