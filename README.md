@@ -9,9 +9,9 @@
 `cd LocationIpGrabber`  
 
 ### Edit `config.json`
-### Set `your_email` to your gmail,   
+### Set `your_email` to your gmail.
 ### Set `your_password` to your gmail password.
-### Set `subject` to the email subject you would like,  
+### Set `subject` to the email subject you would like.
 ### Set `args` to the arguments corresponding to the info you want:
 ```
 -i   IP address  
