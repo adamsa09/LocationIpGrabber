@@ -33,26 +33,26 @@ ipinfo = r.json()
 def findinfo(data):
     msg = ''
     if '-i' in data['args']:
-        msg = msg + 'IP ' + ipinfo['ip'] + ','
+        msg = msg + 'IP: ' + ipinfo['ip'] + '  --  '
     if '-h' in data['args']:
-        msg = msg + 'HOSTNAME ' + ipinfo['hostname'] + ','
+        msg = msg + 'HOSTNAME (Internet provider): ' + ipinfo['hostname'] + '  --  '
     if '-c' in data['args']:
-        msg = msg + 'CITY ' + ipinfo['city'] + ','
+        msg = msg + 'CITY: ' + ipinfo['city'] + '  --  '
     if '-r' in data['args']:
-        msg = msg + 'REGION ' + ipinfo['region'] + ','
+        msg = msg + 'REGION: ' + ipinfo['region'] + '  --  '
     if '-co' in data['args']:
-        msg = msg + 'COUNTRY ' + ipinfo['country'] + ','
+        msg = msg + 'COUNTRY: ' + ipinfo['country'] + '  --  '
     if '-l' in data['args']:
-        msg = msg + 'LATITUDE, LONGITUDE LOCATION ' + ipinfo['loc'] + ','
+        msg = msg + 'APPROXIMATE COORDINATES: ' + ipinfo['loc'] + '  --  '
     if '-o' in data['args']:
-        msg = msg + 'ORGANIZATION ' + ipinfo['org'] + ','
+        msg = msg + 'ORGANIZATION (Internet provider): ' + ipinfo['org'] + '  --  '
     if '-t' in data['args']:
-        msg = msg + 'TIMEZONE ' + ipinfo['timezone'] + ','
+        msg = msg + 'TIMEZONE: ' + ipinfo['timezone'] + '  --  '
     if '-a' in data['args']:
-        msg = msg + 'IP ' + ipinfo['ip'] + ',' + 'HOSTNAME ' + ipinfo['hostname'] + ',' + 'CITY ' + ipinfo['city'] + ',' + 'REGION ' + ipinfo['region'] + ',' + 'COUNTRY ' + \
-            ipinfo['country'] + ',' + 'LATITUDE, LONGITUDE LOCATION ' + ipinfo['loc'] + ',' + \
-            'ORGANIZATION ' + ipinfo['org'] + ',' + \
-            'TIMEZONE ' + ipinfo['timezone']
+        msg = msg + 'IP: ' + ipinfo['ip'] + '  --  ' + 'HOSTNAME (Internet provider): ' + ipinfo['hostname'] + '  --  ' + 'CITY: ' + ipinfo['city'] + '  --  ' + 'REGION: ' + ipinfo['region'] + '  --  ' + 'COUNTRY: ' + \
+            ipinfo['country'] + '  --  ' + 'APPROXIMATE COORDINATES: ' + ipinfo['loc'] + '  --  ' + \
+            'ORGANIZATION (Internet provider): ' + ipinfo['org'] + '  --  ' + \
+            'TIMEZONE: ' + ipinfo['timezone']
 
     return msg
 

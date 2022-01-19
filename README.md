@@ -15,12 +15,12 @@
 ### Set `args` to the arguments corresponding to the info you want:
 ```
 -i   IP address  
--h   hostname  
+-h   hostname (Internet provider) 
 -c   city  
 -r   region  
 -co  country  
--l   location (long, lat)  
--o   Organizion  
+-l   approximate location (long, lat)  
+-o   Organizion (Internet provider)  
 -p   Postal  
 -t   Timezone  
 -a   All Info

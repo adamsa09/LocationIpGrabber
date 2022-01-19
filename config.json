@@ -1,6 +1,6 @@
 {
-    "your_email": "youremail@gmail.com",
-    "your_password": "yourgmailpassword",
-    "subject": "message subject",
+    "your_email": "youremail@example.com",
+    "your_password": "youremailpassword",
+    "subject": "email subject",
     "args": []
 }
